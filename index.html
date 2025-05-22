@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoFurniture - автоматизация учета мебельного бизнеса</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: var(--dark);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: var(--secondary);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .cta {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin: 2rem 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoFurniture</h1>
+        <p>Комплексная автоматизация учета реализации и доставки мебели</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">О системе</a></li>
+            <li><a href="#features">Возможности</a></li>
+            <li><a href="#technology">Технологии</a></li>
+            <li><a href="#implementation">Внедрение</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Оптимизируйте ваш мебельный бизнес</h2>
+            <p>Комплексное решение для автоматизации учета продаж, управления доставкой и контроля затрат</p>
+            <a href="#contact" class="btn">Заказать демонстрацию</a>
+        </section>
+
+        <section id="about">
+            <h2>О системе</h2>
+            <p>AutoFurniture - это специализированное программное обеспечение, разработанное для автоматизации ключевых процессов мебельного бизнеса:</p>
+            <ul>
+                <li>Учет реализации продукции</li>
+                <li>Планирование и оптимизация маршрутов доставки</li>
+                <li>Контроль транспортных расходов</li>
+                <li>Интеграция с бухгалтерскими системами</li>
+                <li>Аналитика и отчетность</li>
+            </ul>
+        </section>
+
+        <section id="features">
+            <h2>Ключевые возможности</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Управление заказами</h3>
+                    <p>Полный цикл обработки заказов от поступления до выполнения с интеграцией с сайтом и CRM</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Маршрутизация доставки</h3>
+                    <p>Интеллектуальное построение маршрутов с учетом габаритов мебели и транспортных возможностей</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Контроль затрат</h3>
+                    <p>Автоматический расчет себестоимости доставки с учетом топлива, зарплат и других факторов</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Складской учет</h3>
+                    <p>Управление остатками мебели и комплектующих с системой оповещений о необходимости пополнения</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Мобильное приложение</h3>
+                    <p>Приложение для курьеров с навигацией, фотоотчетом и электронной подписью клиента</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Аналитика</h3>
+                    <p>Готовые отчеты и дашборды для анализа эффективности продаж и логистики</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology">
+            <h2>Используемые технологии</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Серверная часть</h3>
+                    <p>Java Spring Boot / Python Django / .NET Core - надежные и масштабируемые решения</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Клиентская часть</h3>
+                    <p>React.js / Vue.js - современные интерфейсы с высокой отзывчивостью</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Базы данных</h3>
+                    <p>PostgreSQL / MySQL - надежное хранение и обработка данных</p>
+                </div>
+                <div class="feature-card">
+                    <h3>ГИС-интеграция</h3>
+                    <p>Google Maps API / Yandex Maps - точное построение маршрутов и геоаналитика</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Готовы оптимизировать свой бизнес?</h2>
+            <p>Оставьте заявку и получите бесплатную консультацию по внедрению системы</p>
+            <a href="#contact" class="btn">Оставить заявку</a>
+        </section>
+
+        <section id="implementation">
+            <h2>Процесс внедрения</h2>
+            <ol>
+                <li><strong>Анализ:</strong> Изучение текущих бизнес-процессов и требований</li>
+                <li><strong>Проектирование:</strong> Разработка архитектуры и интерфейсов системы</li>
+                <li><strong>Разработка:</strong> Создание MVP с базовым функционалом</li>
+                <li><strong>Тестирование:</strong> Проверка работы системы на реальных данных</li>
+                <li><strong>Внедрение:</strong> Поэтапный запуск системы с обучением сотрудников</li>
+                <li><strong>Поддержка:</strong> Техническое сопровождение и развитие системы</li>
+            </ol>
+        </section>
+
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <div>
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ddd;">
+                    </div>
+                    <div>
+                        <label for="company">Компания</label>
+                        <input type="text" id="company" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ddd;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" rows="4" style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #ddd;"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+            <div style="margin-top: 2rem;">
+                <h3>Контактная информация</h3>
+                <p>Email: info@autofurniture.ru</p>
+                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>Адрес: г. Нижний Новгород, ул. Мебельная, д. 15, офис 34</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AutoFurniture - система автоматизации учета реализации и затрат на доставку мебели</p>
+        <p>Все права защищены</p>
+    </footer>
+</body>
+</html>
